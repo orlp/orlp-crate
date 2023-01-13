@@ -7,6 +7,9 @@ repository = "https://github.com/orlp/orlp-crate"
 readme = "README.md"
 license = "Zlib"
 
+[features]
+default = ["std"]
+unstable = []
+std = []
+
 [dependencies]
-
-
