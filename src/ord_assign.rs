@@ -8,7 +8,7 @@ impl Drop for PreventUnwind {
 }
 
 /// An extension trait for mutating in-place versions of `Ord`'s `min`/`max`/`clamp`.
-/// 
+///
 /// All implementations call `abort()` if the `Ord` implementation panics.
 pub trait OrdAssign {
     fn bound_at_least(&mut self, other: Self);

@@ -18,7 +18,7 @@ impl fmt::Display for NoneError {
 
 /// An extension trait that allows you to convert `Option<T>` into
 /// `Result<T, NoneError>` simply by calling `opt.some()`.
-/// 
+///
 /// Particularly useful with type-erased error handling such as
 /// `Box<dyn Error>` or `anyhow::Error`. The error type contains the source
 /// code location of where `some()` was erroneously called, for easy debugging.
@@ -42,7 +42,6 @@ impl<T> OptionSomeExt for Option<T> {
     }
 }
 
-
 #[cfg(test)]
 mod test {
     use super::OptionSomeExt;
@@ -51,7 +50,7 @@ mod test {
     fn test_some_ext() {
         let a = Some(42);
         assert!(a.some().is_ok());
-        
+
         let b: Option<i32> = None;
         assert!(b.some().is_err());
     }
