@@ -1,7 +1,7 @@
 [package]
 description = "Orson Peters' personal crate"
 name = "orlp"
-version = "0.0.0"
+version = "0.1.0"
 edition = "2021"
 repository = "https://github.com/orlp/orlp-crate"
 readme = "README.md"
